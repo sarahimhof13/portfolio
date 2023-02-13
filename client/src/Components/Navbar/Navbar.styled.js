@@ -4,12 +4,17 @@ import { Device } from "../../Devices";
 export const NavContainer = styled.nav`
     display: flex;
     justify-content: space-around;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     flex-wrap: wrap;
 
     @media ${Device.tablet} {
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding: 30px 0;
+    }
+
+    @media ${Device.desktop} {
+        padding: 40px 0;
     }
 
 `

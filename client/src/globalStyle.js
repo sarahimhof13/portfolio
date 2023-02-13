@@ -7,13 +7,30 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-family: 'Space Grotesk', sans-serif;
+    }
+
+    body {
         background-color: #0B132B;
     }
 
     h1 {
-        font-size: 5.5rem;
-        line-height: 5.5rem;
-        letter-spacing: -0.16rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.07rem;
+        font-weight: 700;
+        color: var(--white);
+
+        @media ${Device.tablet} {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+            letter-spacing: -0.13rem;
+        }
+
+        @media ${Device.desktop} {
+            font-size: 5.5rem;
+            line-height: 5.5rem;
+            letter-spacing: -0.16rem;
+        }
 
     }
 
@@ -31,6 +48,8 @@ export const GlobalStyle = createGlobalStyle`
     p {
         font-size: 1.125rem;
         line-height: 1.75rem;
+        color: var(--white);
+        font-weight: 500;
     }
 
     :root {
@@ -44,7 +63,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 `
 
-export const PageContainer = styled.main `
+export const PageContainer = styled.main`
     margin: 0 16px;
 
     @media ${Device.tablet} {
