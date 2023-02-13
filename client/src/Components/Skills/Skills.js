@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { SkillCardContainer, SkillsContainer } from "./Skills.styled";
+import { SkillCardContainer, SkillsContainer, CircleImg } from "./Skills.styled";
 
 import HtmlCSSLogo from "../../assets/html-css-logo.png"
 import JavaScriptLogo from "../../assets/javascript-logo.png"
@@ -11,6 +11,7 @@ import GitLogo from "../../assets/git-logo.png"
 import FigmaLogo from "../../assets/figma-logo.png"
 import PhotoshopLogo from "../../assets/photoshop-logo.png"
 import IllustratorLogo from "../../assets/illustrator-logo.png"
+import CirclesImg from "../../assets/pattern-rings-2.svg"
 
 const Skills = () => {
     return (
@@ -27,6 +28,7 @@ const Skills = () => {
                 <Card src={FigmaLogo} description="Figma" />
                 <Card src={PhotoshopLogo} description="Photoshop" />
                 <Card src={IllustratorLogo} description="Illustrator" />
+                <CircleImg src={CirclesImg} alt="" />
             </SkillCardContainer>
         </SkillsContainer>
     );

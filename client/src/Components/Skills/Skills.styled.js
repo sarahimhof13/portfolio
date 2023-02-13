@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Device } from "../../Devices";
 
 export const SkillsContainer = styled.section`
-    padding: 56px 0;
+    margin: 56px 0 254px 0;
     text-align: center;
 
     h1 {
@@ -53,4 +53,11 @@ export const SkillImg = styled.img`
     @media ${Device.desktop} {
         height: 67px;
     }
+`
+
+export const CircleImg = styled.img`
+    position: absolute;
+    right: -150px;
+    top: 1350px;
+    z-index: -1;
 `
