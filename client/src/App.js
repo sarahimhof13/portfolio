@@ -1,5 +1,6 @@
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
+import Skills from "./Components/Skills/Skills";
 import { GlobalStyle, PageContainer } from "./globalStyle";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <GlobalStyle />
         <Navbar />
         <Hero/>
+        <Skills/>
       </PageContainer>
     </div>
   );
