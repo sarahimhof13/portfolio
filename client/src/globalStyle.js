@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-family: 'Space Grotesk', sans-serif;
-        overflow-x: hidden;
     }
 
     body {
@@ -38,12 +37,15 @@ export const GlobalStyle = createGlobalStyle`
     h2 {
         font-size: 3rem;
         line-height: 3.5rem;
-        letter-spacing: -0.9rem;
+        letter-spacing: -0.09rem;
+        color: var(--white);
     }
 
     h3 {
         font-size: 1.5rem;
         line-height: 2rem;
+        color: var(--white);
+        text-transform: uppercase;
     }
 
     p {

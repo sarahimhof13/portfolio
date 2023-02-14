@@ -2,11 +2,16 @@ import styled from "styled-components";
 import { Device } from "../../Devices";
 
 export const SkillsContainer = styled.section`
-    margin: 56px 0 254px 0;
+    margin-top: 56px;
     text-align: center;
+    border-bottom: 1px solid var(--light-grey);
 
-    h1 {
+    h2 {
         margin-bottom: 40px;
+
+            @media ${Device.tablet} {
+            text-align: left;
+        }
     }
 
     span {
@@ -24,6 +29,7 @@ export const SkillCardContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     gap: 18px;
+    margin-bottom: 56px;
 
     @media ${Device.desktop} {
         gap: 24px;
@@ -53,11 +59,4 @@ export const SkillImg = styled.img`
     @media ${Device.desktop} {
         height: 67px;
     }
-`
-
-export const CircleImg = styled.img`
-    position: absolute;
-    right: -150px;
-    top: 1350px;
-    z-index: -1;
 `
