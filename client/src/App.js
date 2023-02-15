@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Projects from "./Components/Projects/Projects";
@@ -14,6 +15,7 @@ function App() {
         <Skills/>
         <Projects />
       </PageContainer>
+      <Footer/>
     </div>
   );
 }

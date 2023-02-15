@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Device } from "../../Devices";
 
 export const ProjectsSection = styled.section`
-    margin-top: 56px;
+    margin: 56px 0;
 `
 
 export const ProjectsHeader = styled.div`

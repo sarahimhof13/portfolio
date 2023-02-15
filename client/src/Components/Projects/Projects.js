@@ -9,7 +9,7 @@ const Projects = () => {
         <ProjectsSection>
             <ProjectsHeader>
                 <h2>Projects</h2>
-                <SecondaryButton name="Contact Me" />
+                <SecondaryButton name="Contact Me" href="#contact" />
             </ProjectsHeader>
             <ProjectsContainer>
                 <ProjectCard src={ProjectImg} title="Design Portfolio" language="Javascript HTML" />

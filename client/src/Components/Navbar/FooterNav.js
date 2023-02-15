@@ -1,10 +1,10 @@
-import { Icon, IconContainer, NavContainer, Logo } from "./Navbar.styled";
+import { Icon, IconContainer, FooterNavContainer, Logo } from "./Navbar.styled";
 import githubIcon from "../../assets/icon-github.svg"
 import linkedinIcon from "../../assets/icon-linkedin.svg"
 
-const Navbar = () => {
+const FooterNavbar = () => {
     return ( 
-        <NavContainer>
+        <FooterNavContainer>
             <Logo href="/">sarahimhof</Logo>
             <IconContainer>
                 <a href="http://github.com/sarahimhof13" target="_blank" rel="noreferrer">
@@ -14,8 +14,8 @@ const Navbar = () => {
                     <Icon src={linkedinIcon}/>
                 </a>
             </IconContainer>
-        </NavContainer>
+        </FooterNavContainer>
      );
 }
  
-export default Navbar;
+export default FooterNavbar;

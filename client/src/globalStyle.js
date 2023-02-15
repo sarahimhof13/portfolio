@@ -39,6 +39,18 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 3.5rem;
         letter-spacing: -0.09rem;
         color: var(--white);
+
+        @media ${Device.tablet} {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+            letter-spacing: -0.13rem;
+        }
+
+        @media ${Device.desktop} {
+            font-size: 5.5rem;
+            line-height: 5.5rem;
+            letter-spacing: -0.16rem;
+        }
     }
 
     h3 {

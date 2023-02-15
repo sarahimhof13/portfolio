@@ -15,12 +15,12 @@ export const HeroContainer = styled.section`
         margin-bottom: 24px;
 
         @media ${Device.tablet} {
-            max-width: 445px;
+            max-width: 700px;
         }
 
         @media ${Device.desktop} {
             margin-top: 100px;
-            max-width: 550px;
+            max-width: 700px;
         }
     }
 
