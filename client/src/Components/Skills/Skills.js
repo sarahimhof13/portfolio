@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { SkillCardContainer, SkillsContainer, CircleImg } from "./Skills.styled";
+import { SkillCardContainer, SkillsContainer } from "./Skills.styled";
 
 import HtmlCSSLogo from "../../assets/html-css-logo.png"
 import JavaScriptLogo from "../../assets/javascript-logo.png"

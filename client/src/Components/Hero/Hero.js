@@ -1,4 +1,4 @@
-import { HeroRingsImg, HeroContainer, CircleImg } from "./Hero.styled";
+import { HeroRingsImg, HeroContainer } from "./Hero.styled";
 import { MainButton } from "../General/Buttons";
 
 // Import images
