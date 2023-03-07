@@ -3,29 +3,42 @@ import { Device } from "../../Devices";
 
 export const HeroContainer = styled.section`
     text-align: center;
-    border-bottom: 1px solid var(--light-grey);
+    background-color: var(--slate);
+    padding: 50px 20px ;
 
     @media ${Device.tablet} {
         text-align: left;
+        padding: 100px 30px;
+    }
+
+    @media ${Device.desktop} {
+        padding: 165px;
+        height: calc(100vh - 450px);
     }
 
     h1 {
-        margin-top: 61px;
         background: transparent;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
 
         @media ${Device.tablet} {
-            max-width: 700px;
+            margin-bottom: 5px;
         }
 
         @media ${Device.desktop} {
-            margin-top: 100px;
-            max-width: 700px;
+            margin-bottom: 25px;
         }
     }
 
-    span {
-        color: var(--aquamarine);
+    h3 {
+        margin-bottom: 10px;
+
+        @media ${Device.tablet} {
+            margin-bottom: 5px;
+        }
+
+        @media ${Device.desktop} {
+            margin-bottom: 20px;
+        }
     }
 
     p {
@@ -35,6 +48,19 @@ export const HeroContainer = styled.section`
             margin-bottom: 30px;
             max-width: 445px;
         }
+
+        @media ${Device.desktop} {
+            font-size: 1.8rem;
+            max-width: 520px;
+            line-height: 2.7rem;
+        }
+    }
+
+    span {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: var(--blue-pink-gradient);
     }
 
     Button {

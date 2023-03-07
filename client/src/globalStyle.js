@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import styled from "styled-components";
 import { Device } from "./Devices";
 
 export const GlobalStyle = createGlobalStyle`
@@ -10,11 +9,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: #0B132B;
+        background-color: var(--light-grey);
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 2.5rem;
         letter-spacing: -0.07rem;
         font-weight: 700;
@@ -22,12 +21,12 @@ export const GlobalStyle = createGlobalStyle`
 
         @media ${Device.tablet} {
             font-size: 4.5rem;
-            line-height: 4.5rem;
+            line-height: 4rem;
             letter-spacing: -0.13rem;
         }
 
         @media ${Device.desktop} {
-            font-size: 5.5rem;
+            font-size: 8rem;
             line-height: 5.5rem;
             letter-spacing: -0.16rem;
         }
@@ -47,13 +46,24 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         @media ${Device.desktop} {
-            font-size: 5.5rem;
+            font-size: 5rem;
             line-height: 5.5rem;
             letter-spacing: -0.16rem;
         }
     }
 
     h3 {
+        color: var(--pink);
+        font-size: 1.5rem;
+
+        @media ${Device.desktop} {
+            font-size: 2.5rem;
+            
+        }
+
+    }
+
+    h4 {
         font-size: 1.5rem;
         line-height: 2rem;
         color: var(--white);
@@ -68,24 +78,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     :root {
-        --dark-blue: #0b132b;
-        --charcoal: #3D5467;
-        --red: #DB5461;
+        --slate: #232323;
+        --blue: #12C2E9;
+        --pink: #F64F9F;
         --light-orange: #FFB703;
         --aquamarine: #1AFFD5;
         --white: #fff;
         --light-grey: #F2F2F2;
-    }
-`
-
-export const PageContainer = styled.main`
-    margin: 0 16px;
-
-    @media ${Device.tablet} {
-        margin: 0 32px;
-    }
-
-    @media ${Device.desktop} {
-        margin: 0 165px;
+        --blue-pink-gradient: linear-gradient(90deg, #12C2E9 10.41%, #C471ED 50.84%, #F64F9F 91.26%);
     }
 `

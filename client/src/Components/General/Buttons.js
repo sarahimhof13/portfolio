@@ -1,25 +1,25 @@
 import { HeroButton, Button, SubmitButton } from "./Buttons.styled";
 
-export const MainButton = (props) => {
+export const MainButton = ({href, name}) => {
     return ( 
-        <HeroButton href={props.href}>
-            {props.name}
+        <HeroButton href={href}>
+            {name}
         </HeroButton>
      );
 }
 
-export const SecondaryButton = (props) => {
+export const SecondaryButton = ({href, name}) => {
     return (
-        <Button href={props.href}>
-            {props.name}
+        <Button href={href} target="_blank">
+            {name}
         </Button>
     );
 }
 
-export const FormButton = (props) => {
+export const FormButton = ({name}) => {
     return (
         <SubmitButton>
-            {props.name}
+            {name}
         </SubmitButton>
     )
 }
