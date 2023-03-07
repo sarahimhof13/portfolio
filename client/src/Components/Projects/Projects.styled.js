@@ -15,7 +15,7 @@ export const ProjectsHeader = styled.div`
 export const ProjectsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 15px;
 `
 
@@ -33,9 +33,27 @@ export const ProjectCardContainer = styled.div`
     }
 `
 
+export const ProjectImageContainer = styled.picture`
+    height: 300px;
+    width: 450px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+`
+
 export const ProjectImage = styled.img`
-    max-width: 100%;
-    margin-bottom: 20px;
+    bottom: -80%;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	transition: bottom 2s;
+
+    &:hover {
+        bottom: 0;
+        transition: all 2s;
+        cursor: pointer;
+    }
 `
 
 export const ProjectLanguage = styled.p`
@@ -45,36 +63,7 @@ export const ProjectLanguage = styled.p`
     margin-bottom: 15px;
 `
 
-export const Overlay = styled.div`
-    
-    @media ${Device.desktop} {
-        display: block;
-        position: absolute;
-        top: 0;
-        height: 400px;
-        width: 100%;
-        background-color: #000000;
-        opacity: 0;
-
-        &:hover {
-            opacity: 0.8;
-            transition: 0.75s;
-        }
-    }
-
-`
-
 export const ButtonContainer = styled.div`
     display: flex;
     gap: 30px;
-
-    @media ${Device.desktop} {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        flex-direction: column;
-        text-align: center;
-        gap: 40px;
-    }
 `

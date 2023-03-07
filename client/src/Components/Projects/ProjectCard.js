@@ -1,18 +1,18 @@
 import { SecondaryButton } from "../General/Buttons";
-import { ProjectCardContainer, ProjectImage, ProjectLanguage, ButtonContainer, Overlay } from "./Projects.styled";
+import { ProjectCardContainer, ProjectImage, ProjectLanguage, ButtonContainer, ProjectImageContainer } from "./Projects.styled";
 
-const ProjectCard = (props) => {
+const ProjectCard = ({ src, title, language, href1, href2 }) => {
     return (
         <ProjectCardContainer>
-            <ProjectImage src={props.src} />
-            <h3>{props.title}</h3>
-            <ProjectLanguage>{props.language}</ProjectLanguage>
-            <Overlay className="overlay">
-                <ButtonContainer>
-                    <SecondaryButton name="View Project" />
-                    <SecondaryButton name="View Code" />
-                </ButtonContainer>
-            </Overlay>
+            <ProjectImageContainer>
+                <ProjectImage src={src} />
+            </ProjectImageContainer>
+            <h3>{title}</h3>
+            <ProjectLanguage>{language}</ProjectLanguage>
+            <ButtonContainer>
+                <SecondaryButton name="View Project" href={href1} />
+                <SecondaryButton name="View Code" href={href2} />
+            </ButtonContainer>
         </ProjectCardContainer>
     );
 }

@@ -2,19 +2,15 @@ import { SecondaryButton } from "../General/Buttons";
 import ProjectCard from "./ProjectCard";
 import { ProjectsContainer, ProjectsHeader, ProjectsSection } from "./Projects.styled";
 
-import ProjectImg from "../../assets/thumbnail-project-1-large.webp"
-
 const Projects = () => {
     return (
-        <ProjectsSection>
+        <ProjectsSection id="projects">
             <ProjectsHeader>
                 <h2>Projects</h2>
                 <SecondaryButton name="Contact Me" href="#contact" />
             </ProjectsHeader>
             <ProjectsContainer>
-                <ProjectCard src={ProjectImg} title="Design Portfolio" language="Javascript HTML" />
-                <ProjectCard src={ProjectImg} title="Design Portfolio" language="Javascript HTML" />
-                <ProjectCard src={ProjectImg} title="Design Portfolio" language="Javascript HTML" />
+                <ProjectCard src="/assets/projects/skilled-e-learning-platform.png" title="Skilled E-Learning Landing Page" language="Javascript react styled-components" />
             </ProjectsContainer>
         </ProjectsSection>
     );
