@@ -10,11 +10,11 @@ const Footer = () => {
                 <h2 id="contact">Contact</h2>
                 <p>I would love to hear from you. Please fill in the form, and I’ll get back to you as soon as possible.</p>
             </FooterText>
-            <FooterForm method="POST" netlify>
-                <FooterInput placeholder="NAME" id="name" name="name"/>
-                <FooterInput placeholder="EMAIL" id="email" name="email"/>
-                <FooterTextArea placeholder="MESSAGE"id="message" name="message"/>
-                <FormButton name="Send Message" type="submit"/>
+            <FooterForm method="post" netlify data-netlify="true" name="Contact Form">
+                <FooterInput placeholder="NAME" id="name" name="name" />
+                <FooterInput placeholder="EMAIL" id="email" name="email" />
+                <FooterTextArea placeholder="MESSAGE"id="message" name="message" />
+                <FormButton name="Send Message" />
             </FooterForm>
             <FooterNavbar/>
         </FooterContainer>
