@@ -10,7 +10,7 @@ const Projects = () => {
                 <SecondaryButton name="Contact Me" href="#contact" />
             </ProjectsHeader>
             <ProjectsContainer>
-                <ProjectCard src="/assets/projects/skilled-e-learning-platform.png" title="Skilled E-Learning Landing Page" language="Javascript react styled-components" />
+                <ProjectCard src="/assets/projects/skilled-e-learning-platform.png" title="Skilled E-Learning Landing Page" language="Javascript react styled-components" href1="https://skilled-elearning-landing.sarahimhof.com/" href2="https://github.com/sarahimhof13/e-learning-landing-page"/>
             </ProjectsContainer>
         </ProjectsSection>
     );

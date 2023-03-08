@@ -7,7 +7,7 @@ const ProjectCard = ({ src, title, language, href1, href2 }) => {
             <ProjectImageContainer>
                 <ProjectImage src={src} />
             </ProjectImageContainer>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <ProjectLanguage>{language}</ProjectLanguage>
             <ButtonContainer>
                 <SecondaryButton name="View Project" href={href1} />
