@@ -1,21 +1,27 @@
-import { Icon, IconContainer, FooterNavContainer, Logo } from "./Navbar.styled";
-import githubIcon from "../../assets/icon-github.svg"
-import linkedinIcon from "../../assets/icon-linkedin.svg"
+import { Icon, IconContainer, FooterNavContainer, Logo, FooterLogoContainer, FooterLinksContainer } from "./Navbar.styled";
 
 const FooterNavbar = () => {
-    return ( 
+    return (
         <FooterNavContainer>
-            <Logo href="/">sarahimhof</Logo>
+            <FooterLogoContainer>
+                <img src="/assets/logo.svg" alt="" />
+                <Logo href="/">sarahimhof</Logo>
+            </FooterLogoContainer>
+            <FooterLinksContainer>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </FooterLinksContainer>
             <IconContainer>
                 <a href="http://github.com/sarahimhof13" target="_blank" rel="noreferrer">
-                    <Icon src={githubIcon} />
+                    <Icon src="/assets/icon-github.svg" />
                 </a>
                 <a href="https://www.linkedin.com/in/sarah-imhof" target="_blank" rel="noreferrer">
-                    <Icon src={linkedinIcon}/>
+                    <Icon src="/assets/icon-linkedin.svg" />
                 </a>
             </IconContainer>
         </FooterNavContainer>
-     );
+    );
 }
- 
+
 export default FooterNavbar;

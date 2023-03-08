@@ -20,18 +20,18 @@ export const HeroButton = styled.a`
 `
 
 export const Button = styled.a`
-    color: var(--white);
+    color: var(--blue);
     text-transform: uppercase;
     letter-spacing: 0.14rem;
     background: none;
     font-size: 1rem;
     border: none;
-    border-bottom: 2px solid var(--red);
+    border-bottom: 2px solid var(--blue);
     padding-bottom: 10px;
     text-decoration: none;
 
     &:hover {
-        color: var(--red);
+        color: var(--slate);
         cursor: pointer;
     }
 
@@ -44,16 +44,15 @@ export const SubmitButton = styled.button`
     background: none;
     font-size: 1rem;
     border: none;
-    border: 2px solid var(--aquamarine);
+    border: 2px solid var(--blue);
     padding: 10px 7px;
     max-width: 170px;
     margin-left: auto;
 
     &:hover {
-        color: var(--dark-blue);
-        background-color: var(--light-grey);
         transition: 0.75s;
         cursor: pointer;
+        background: var(--blue-pink-gradient) ; 
     }
 
 `

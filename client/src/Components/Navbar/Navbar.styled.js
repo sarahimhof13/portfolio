@@ -101,7 +101,7 @@ export const Icon = styled.img`
     height: 24px;
 `
 
-export const FooterNavContainer = styled.nav`
+export const FooterNavContainer = styled.footer`
     display: flex;
     justify-content: space-around;
     padding: 40px 0;
@@ -111,6 +111,7 @@ export const FooterNavContainer = styled.nav`
     @media ${Device.tablet} {
         flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
         padding: 30px 0;
         margin: 0 -130px;
     }
@@ -121,4 +122,45 @@ export const FooterNavContainer = styled.nav`
         flex: 2 1 auto;
     }
 
+`
+
+export const FooterLogoContainer = styled.div`
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media ${Device.tablet} {
+        margin-bottom: 0;
+    }
+
+    & img {
+        height: 22px;
+    }
+`
+
+export const FooterLinksContainer =  styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+
+    @media ${Device.tablet} {
+        margin-bottom: 0;
+        justify-content: right;
+        margin-right: 20px;
+    }
+
+
+    & a {
+        text-decoration: none;
+        color: var(--white);
+        text-transform: uppercase;
+
+        &:hover {
+            color: var(--pink);
+            transition: 0.2s;
+        }
+    }
 `

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Device } from "../../Devices";
 
 export const FooterContainer = styled.footer`
-    background-color: var(--charcoal);
+    background-color: var(--slate);
     text-align: center;
     padding: 60px 16px 20px 16px; 
     position: relative;
@@ -44,7 +44,7 @@ export const FooterForm = styled.form`
     display: flex;
     flex-direction: column;
     margin: 20px 0 39px 0;
-    padding-bottom: 87px;
+    padding-bottom: 20px;
 
     @media ${Device.desktop} {
         min-width: 445px;

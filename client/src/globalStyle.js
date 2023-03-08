@@ -66,7 +66,7 @@ export const GlobalStyle = createGlobalStyle`
     h4 {
         font-size: 1.5rem;
         line-height: 2rem;
-        color: var(--white);
+        color: var(--pink);
         text-transform: uppercase;
     }
 
@@ -81,10 +81,9 @@ export const GlobalStyle = createGlobalStyle`
         --slate: #232323;
         --blue: #12C2E9;
         --pink: #F64F9F;
-        --light-orange: #FFB703;
-        --aquamarine: #1AFFD5;
         --white: #fff;
         --light-grey: #F2F2F2;
+        --mid-grey: #666464;
         --blue-pink-gradient: linear-gradient(90deg, #12C2E9 10.41%, #C471ED 50.84%, #F64F9F 91.26%);
     }
 `
