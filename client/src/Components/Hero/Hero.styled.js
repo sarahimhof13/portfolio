@@ -4,16 +4,24 @@ import { Device } from "../../Devices";
 export const HeroContainer = styled.section`
     text-align: center;
     background-color: var(--slate);
-    padding: 50px 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px 120px 20px ;
+    height: calc(100vh - 349px);
 
     @media ${Device.tablet} {
         text-align: left;
         padding: 100px 30px;
+        align-items: flex-start;
+        height: calc(100vh - 301px);
+        
     }
 
     @media ${Device.desktop} {
         padding: 165px;
-        height: calc(100vh - 450px);
+        height: calc(100vh - 451px);
     }
 
     h1 {
@@ -61,10 +69,6 @@ export const HeroContainer = styled.section`
         -webkit-background-clip: text;
         color: transparent;
         background-image: var(--blue-pink-gradient);
-    }
-
-    Button {
-        margin-bottom: 78px;
     }
 `
 

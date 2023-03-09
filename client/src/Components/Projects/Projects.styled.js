@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Device } from "../../Devices";
 
 export const ProjectsSection = styled.section`
-    padding: 10px 20px;
+    padding: 10px 20px 30px 10px;
 
     @media ${Device.desktop} {
         padding: 70px 165px;

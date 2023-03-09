@@ -16,7 +16,7 @@ export const SecondaryButton = ({href, name}) => {
     );
 }
 
-export const FormButton = ({name, type}) => {
+export const FormButton = ({name}) => {
     return (
         <SubmitButton type="submit">
             {name}

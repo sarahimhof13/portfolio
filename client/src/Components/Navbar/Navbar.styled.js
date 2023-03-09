@@ -107,6 +107,7 @@ export const FooterNavContainer = styled.footer`
     padding: 40px 0;
     flex-wrap: wrap;
     border-top: 1px solid var(--light-grey);
+    flex: 0 0 100%;
 
     @media ${Device.tablet} {
         flex-wrap: nowrap;
@@ -119,7 +120,6 @@ export const FooterNavContainer = styled.footer`
     @media ${Device.desktop} {
         padding: 40px 0;
         margin: 0;
-        flex: 2 1 auto;
     }
 
 `

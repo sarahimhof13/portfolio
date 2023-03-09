@@ -10,7 +10,6 @@ export const HeroButton = styled.a`
     letter-spacing: 0.14rem;
     padding: 16px;
     display: inline-flex;
-    margin-bottom: 78px;
     max-width: 165px;
 
     &:hover {

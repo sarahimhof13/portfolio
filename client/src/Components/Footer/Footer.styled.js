@@ -24,12 +24,6 @@ export const FooterContainer = styled.footer`
     }
 `
 
-export const RingsImg = styled.img`
-    position: absolute;
-    left: -300px;
-    top: 350px;
-`
-
 export const FooterText = styled.div`
     @media ${Device.tablet} {
         margin-bottom: 40px;
@@ -44,7 +38,7 @@ export const FooterForm = styled.form`
     display: flex;
     flex-direction: column;
     margin: 20px 0 39px 0;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 
     @media ${Device.desktop} {
         min-width: 445px;

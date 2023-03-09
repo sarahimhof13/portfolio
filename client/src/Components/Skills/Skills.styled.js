@@ -40,12 +40,12 @@ export const SkillsContainer = styled.section`
 export const SkillCardContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 56px;
     gap: 10px;
 
     @media ${Device.desktop} {
-        gap: 20px;
+        gap: 30px;
     }
 `
 
