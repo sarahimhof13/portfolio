@@ -15,7 +15,7 @@ const Footer = () => {
                 <FooterInput placeholder="NAME" id="name" name="name" />
                 <FooterInput placeholder="EMAIL" id="email" name="email" type="email"/>
                 <FooterTextArea placeholder="MESSAGE"id="message" name="message" />
-                <FormButton name="Send Message" />
+                <FormButton name="Send Message" type="submit"/>
             </FooterForm>
             <FooterNavbar/>
         </FooterContainer>
