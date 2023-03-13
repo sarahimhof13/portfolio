@@ -8,8 +8,8 @@ export const HeroContainer = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 70px 20px 120px 20px ;
-    height: calc(100vh - 349px);
+    padding: 60px 20px 120px 20px ;
+    height: calc(80vh - 349px);
 
     @media ${Device.tablet} {
         text-align: left;
@@ -70,11 +70,4 @@ export const HeroContainer = styled.section`
         color: transparent;
         background-image: var(--blue-pink-gradient);
     }
-`
-
-export const HeroRingsImg = styled.img `
-    position: absolute;
-    z-index: -1;
-    left: -342px;
-    top: 124px;
 `
