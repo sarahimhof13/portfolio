@@ -3,25 +3,32 @@ import { Device } from "../../Devices";
 
 export const HeroContainer = styled.section`
     text-align: center;
-    background-color: var(--slate);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 60px 20px 120px 20px ;
-    height: calc(80vh - 349px);
+    justify-content: flex-start;
+    height: calc(100vh - 300px);
+    position: relative;
+    overflow: hidden;
+
+    & #tsparticles {
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
 
     @media ${Device.tablet} {
         text-align: left;
-        padding: 100px 30px;
         align-items: flex-start;
-        height: calc(100vh - 301px);
+        height: calc(100vh - 101px);
+        justify-content: center;
         
     }
 
     @media ${Device.desktop} {
-        padding: 165px;
-        height: calc(100vh - 451px);
+        height: calc(100vh - 121px);
     }
 
     h1 {
@@ -69,5 +76,19 @@ export const HeroContainer = styled.section`
         -webkit-background-clip: text;
         color: transparent;
         background-image: var(--blue-pink-gradient);
+    }
+`
+
+export const HeroContent = styled.div`
+    padding: 0 16px;
+    margin-top: 40px;
+
+    @media ${Device.tablet} {
+        padding: 0 30px;
+        margin: 0;
+    }
+
+    @media ${Device.desktop} {
+        padding: 0 165px;
     }
 `

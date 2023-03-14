@@ -86,4 +86,5 @@ export const GlobalStyle = createGlobalStyle`
         --mid-grey: #666464;
         --blue-pink-gradient: linear-gradient(90deg, #12C2E9 10.41%, #C471ED 50.84%, #F64F9F 91.26%);
     }
-`
+    
+    `
