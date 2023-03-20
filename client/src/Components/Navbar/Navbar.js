@@ -18,7 +18,7 @@ const Navbar = () => {
             <LinksContainer>
                 <button onClick={() => handleClickNav("skills")}>Skills</button>
                 <button onClick={() => handleClickNav("projects")}>Projects</button>
-                <button  onClick={() => handleClickNav("contact")}>Contact</button>
+                <button onClick={() => handleClickNav("contact")}>Contact</button>
             </LinksContainer>
             <IconContainer>
                 <a href="http://github.com/sarahimhof13" target="_blank" rel="noreferrer">
