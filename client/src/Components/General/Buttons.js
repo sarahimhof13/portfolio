@@ -8,9 +8,9 @@ export const MainButton = ({href, name}) => {
      );
 }
 
-export const SecondaryButton = ({href, name}) => {
+export const SecondaryButton = ({href, name, onClick}) => {
     return (
-        <Button href={href} target="_blank">
+        <Button href={href} target="_blank" onClick={onClick}>
             {name}
         </Button>
     );
