@@ -7,6 +7,7 @@ export const HeroContainer = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding-top: 80px;
     height: calc(100vh - 300px);
     position: relative;
     overflow: hidden;
@@ -24,6 +25,7 @@ export const HeroContainer = styled.section`
         align-items: flex-start;
         height: calc(100vh - 101px);
         justify-content: center;
+        padding-top: 0;
         
     }
 

@@ -74,10 +74,13 @@ export const LinksContainer = styled.nav`
         gap: 32px;
     }
 
-    & a {
+    & button {
         color: var(--white);
         text-decoration: none;
         text-transform: uppercase;
+        background: none;
+        border: none;
+        font-size: 1rem;
 
         &:hover {
             color: var(--pink);
@@ -153,10 +156,13 @@ export const FooterLinksContainer =  styled.div`
     }
 
 
-    & a {
-        text-decoration: none;
+    & button {
         color: var(--white);
+        text-decoration: none;
         text-transform: uppercase;
+        background: none;
+        border: none;
+        font-size: 1rem;
 
         &:hover {
             color: var(--pink);

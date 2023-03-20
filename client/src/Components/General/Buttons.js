@@ -1,16 +1,16 @@
 import { HeroButton, Button, SubmitButton } from "./Buttons.styled";
 
-export const MainButton = ({href, name}) => {
+export const MainButton = ({href, name, onClick}) => {
     return ( 
-        <HeroButton href={href}>
+        <HeroButton href={href} onClick={onClick}>
             {name}
         </HeroButton>
      );
 }
 
-export const SecondaryButton = ({href, name}) => {
+export const SecondaryButton = ({href, name, onClick}) => {
     return (
-        <Button href={href} target="_blank">
+        <Button href={href} target="_blank" onClick={onClick}>
             {name}
         </Button>
     );

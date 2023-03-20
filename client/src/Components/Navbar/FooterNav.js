@@ -1,6 +1,14 @@
 import { Icon, IconContainer, FooterNavContainer, Logo, FooterLogoContainer, FooterLinksContainer } from "./Navbar.styled";
 
 const FooterNavbar = () => {
+
+    const handleClickNav = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <FooterNavContainer>
             <FooterLogoContainer>
@@ -8,9 +16,9 @@ const FooterNavbar = () => {
                 <Logo href="/">sarahimhof</Logo>
             </FooterLogoContainer>
             <FooterLinksContainer>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <button onClick={() => handleClickNav("skills")}>Skills</button>
+                <button onClick={() => handleClickNav("projects")}>Projects</button>
+                <button  onClick={() => handleClickNav("contact")}>Contact</button>
             </FooterLinksContainer>
             <IconContainer>
                 <a href="http://github.com/sarahimhof13" target="_blank" rel="noreferrer">
