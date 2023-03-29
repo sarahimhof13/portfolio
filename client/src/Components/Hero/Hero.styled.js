@@ -6,7 +6,7 @@ export const HeroContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: calc(100vh - 159px);
     position: relative;
     overflow: hidden;
@@ -81,6 +81,7 @@ export const HeroContainer = styled.section`
 
 export const HeroContent = styled.div`
     padding: 0 16px;
+    padding-top: calc(15vh);
 
     @media ${Device.tablet} {
         padding: 0 30px;
