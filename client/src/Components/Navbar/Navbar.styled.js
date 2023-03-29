@@ -89,6 +89,7 @@ export const LinksContainer = styled.nav`
         &:hover {
             color: var(--pink);
             transition: 0.2s;
+            cursor: pointer;
         }
     }
 `
@@ -175,6 +176,7 @@ export const FooterLinksContainer =  styled.div`
         &:hover {
             color: var(--pink);
             transition: 0.2s;
+            cursor: pointer;
         }
     }
 `
