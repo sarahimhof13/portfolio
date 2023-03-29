@@ -21,7 +21,6 @@ export const ProjectsSection = styled.section`
         -webkit-background-clip: text; /* For Safari */
         color: transparent;
         background-image: var(--blue-pink-gradient);
-        height: 80px;
     }
 `
 
@@ -30,6 +29,7 @@ export const ProjectsHeader = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    height: 80px;
 `
 
 export const ProjectsContainer = styled.div`
@@ -71,6 +71,10 @@ export const ProjectImageContainer = styled.picture`
     overflow: hidden;
     position: relative;
     margin-bottom: 15px;
+    
+    & :hover {
+        background-position: 0 100%; 
+}
 
     @media ${Device.desktop} {
         height: 300px;
@@ -78,22 +82,15 @@ export const ProjectImageContainer = styled.picture`
     }
 `
 
-export const ProjectImage = styled.img`
-    bottom: -66%;
-	width: 100%;
-	height: auto;
-	position: absolute;
-	transition: bottom 2s;
+export const ProjectImage = styled.div`
+    width: 100%;
+    height: 100%;
+    background: ${props => `url(${props.src})`} center top / cover no-repeat ;
+    transition: background-position 2s ease-out;
 
-    @media ${Device.desktop} {
-        bottom: -82%;
-    }
-
-    &:hover {
-        bottom: 0;
-        transition: all 2s;
-        cursor: pointer;
-    }
+    & :hover {
+        background-position: 0 100%; 
+}
 `
 
 export const ProjectLanguage = styled.p`

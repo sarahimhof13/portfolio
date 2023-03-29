@@ -6,7 +6,7 @@ export const HeroContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: calc(100vh - 159px);
     position: relative;
     overflow: hidden;
