@@ -6,9 +6,8 @@ export const HeroContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 80px;
-    height: calc(100vh - 300px);
+    justify-content: center;
+    height: calc(100vh - 159px);
     position: relative;
     overflow: hidden;
 
@@ -25,7 +24,6 @@ export const HeroContainer = styled.section`
         align-items: flex-start;
         height: calc(100vh - 101px);
         justify-content: center;
-        padding-top: 0;
         
     }
 
@@ -83,11 +81,14 @@ export const HeroContainer = styled.section`
 
 export const HeroContent = styled.div`
     padding: 0 16px;
-    margin-top: 40px;
 
     @media ${Device.tablet} {
         padding: 0 30px;
         margin: 0;
+    }
+
+    @media ${Device.laptop} {
+        padding: 0 100px;
     }
 
     @media ${Device.desktop} {

@@ -2,7 +2,15 @@ import styled from "styled-components";
 import { Device } from "../../Devices";
 
 export const ProjectsSection = styled.section`
-    padding: 10px 20px 30px 10px;
+    padding: 10px 20px 30px 20px;
+
+    @media ${Device.tablet} {
+        padding: 10px 30px;
+    }
+
+    @media ${Device.laptop} {
+        padding: 20px 100px;
+    }
 
     @media ${Device.desktop} {
         padding: 70px 165px;
@@ -13,6 +21,7 @@ export const ProjectsSection = styled.section`
         -webkit-background-clip: text; /* For Safari */
         color: transparent;
         background-image: var(--blue-pink-gradient);
+        height: 80px;
     }
 `
 
@@ -29,7 +38,7 @@ export const ProjectsContainer = styled.div`
     justify-content: space-around;
     gap: 15px;
 
-    @media ${Device.desktop} {
+    @media ${Device.laptop} {
         justify-content: flex-start;
     }
 `

@@ -11,6 +11,10 @@ export const SkillsContainer = styled.section`
         padding: 20px 30px;
     }
 
+    @media ${Device.laptop} {
+        padding: 20px 100px;
+    }
+
     @media ${Device.desktop} {
         padding: 70px 165px;
     }
