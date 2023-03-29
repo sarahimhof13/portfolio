@@ -18,7 +18,20 @@ const Projects = () => {
                 <SecondaryButton name="Contact Me" onClick={() => handleClickNav("contact")} />
             </ProjectsHeader>
             <ProjectsContainer>
-                <ProjectCard src="/assets/projects/skilled-e-learning-platform.png" title="Skilled E-Learning Landing Page" language="Javascript react styled-components" href1="https://skilled-elearning-landing.sarahimhof.com/" href2="https://github.com/sarahimhof13/e-learning-landing-page"/>
+                <ProjectCard 
+                    src="/assets/projects/skilled-e-learning-platform.png" 
+                    title="Skilled E-Learning Landing Page" 
+                    language="Javascript react styled-components" 
+                    href1="https://skilled-elearning-landing.sarahimhof.com/" 
+                    href2="https://github.com/sarahimhof13/e-learning-landing-page"
+                    />
+                <ProjectCard
+                    src="/assets/projects/sarah-imhof.png"
+                    title="Sarah Imhof Portfolio"
+                    language="Javascript React Styled-Components"
+                    href1="https://sarahimhof.com/"
+                    href2="https://github.com/sarahimhof13/portfolio"
+                />
             </ProjectsContainer>
         </ProjectsSection>
     );
