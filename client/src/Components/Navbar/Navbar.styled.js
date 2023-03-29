@@ -14,6 +14,10 @@ export const NavContainer = styled.header`
         padding: 30px;
     }
 
+    @media ${Device.laptop} {
+        padding: 20px 100px;
+    }
+
     @media ${Device.desktop} {
         padding: 40px 165px;
     }
@@ -118,6 +122,10 @@ export const FooterNavContainer = styled.footer`
         align-items: center;
         padding: 30px 0;
         margin: 0 -130px;
+    }
+
+    @media ${Device.laptop} {
+        padding: 20px 100px;
     }
 
     @media ${Device.desktop} {
