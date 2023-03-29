@@ -75,7 +75,6 @@ export const ProjectImageContainer = styled.picture`
     & :hover {
         background-position: 0 100%; 
 }
-    
 
     @media ${Device.desktop} {
         height: 300px;
@@ -89,14 +88,9 @@ export const ProjectImage = styled.div`
     background: ${props => `url(${props.src})`} center top / cover no-repeat ;
     transition: background-position 2s ease-out;
 
-    @media ${Device.desktop} {
-        bottom: -100%;
-    }
-
-    &:hover {
+    & :hover {
         background-position: 0 100%; 
 }
-    
 `
 
 export const ProjectLanguage = styled.p`
