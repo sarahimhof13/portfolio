@@ -81,7 +81,7 @@ export const HeroContainer = styled.section`
 
 export const HeroContent = styled.div`
     padding: 0 16px;
-    padding-top: calc(15vh);
+    padding-top: 15vh;
 
     @media ${Device.tablet} {
         padding: 0 30px;
